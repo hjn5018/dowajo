@@ -39,7 +39,7 @@ def member1():
 
 @app.route("/member2")
 def member2():
-
+    
     name = "Kim"
     profile = "Who i am"
     tag = "Member"
