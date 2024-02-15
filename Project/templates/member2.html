@@ -31,10 +31,20 @@
         margin-bottom: 20px;
       }
 
-      .board {
-        flex: 1;
-        padding: 20px;
-      }
+      .custom-card {
+      background-color: #000000;
+      /* 원하는 HEX 코드로 변경하세요 */
+    }
+
+    .board {
+      flex: 1;
+      padding: 20px;
+      background-color: #000000;
+    }
+
+    .list-group-item {
+      background-color: #060606;
+    }
 
       .button-container {
         display: flex;
@@ -124,7 +134,7 @@
     <div class="container">
       <!-- 왼쪽: 인물 소개 -->
       <div class="profile">
-        <div class="card mb-3">
+        <div class="card mb-3 custom-card">
           <!-- "{{ url_for('static', filename='본인 사진.png')}}" static에 사진 추가하고 이렇게 올려주세요!  -->
           <img
             src="{{ url_for('static', filename='김용현.png')}}"
