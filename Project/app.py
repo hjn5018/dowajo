@@ -40,8 +40,8 @@ def member1():
 @app.route("/member2")
 def member2():
     
-    name = "Kim"
-    profile = "Who i am"
+    name = "Kim yong hyun"
+    profile = "안녕하세요 강릉에 사는 김용현입니다. ISTJ"
     tag = "Member"
 
     context = {
