@@ -139,7 +139,7 @@
           <!-- "{{ url_for('static', filename='본인 사진.png')}}" static에 사진 추가하고 이렇게 올려주세요!  -->
           <img
             src="{{ url_for('static', filename='한진용.png')}}"
-            class="card-img-top mt-3"
+            class="card-img-top"
             alt="..."
             style="width: 60px; height: auto; margin: auto"
           />
@@ -168,6 +168,32 @@
           </button>
         </div>
         <div class="list-group">
+          <a
+            href="#"
+            class="list-group-item list-group-item-action"
+            style="background-color: transparent"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Help me</h5>
+            </div>
+            <p class="mb-1">
+              We need help. Yeonwoo is gone. we don't know what to do
+            </p>
+            <div class="d-flex w-100 justify-content-between">
+              <small class="text-body-secondary"
+                ><br />someone : Go to team13 and get her back!<br />
+                Buddha : Empty your mind. let her go</small
+              >
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Helping
+              </button>
+            </div>
+          </a>
           {% for dowajo in dowajo %}
           <a
             href="#"

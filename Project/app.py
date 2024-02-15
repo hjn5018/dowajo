@@ -24,7 +24,7 @@ class Help(db.Model):
 class Answer(db.Model):
     listnum = db.Column(db.Integer, primary_key=True)
     answer = db.Column(db.String, nullable=False)
-    hiiam = db.Column(db.String, nullable=False)
+    hiiam = db.Column(db.String, nullable=False, default="someone") #누군지 안 적고 도움 주면 "someone"이 디폴트값
     username = db.Column(db.String, nullable=False)
     whatlist = db.Column(db.String, nullable=False, default="")
 
