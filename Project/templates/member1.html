@@ -105,6 +105,7 @@
         </div>
       </div>
     </nav>
+<<<<<<< Updated upstream
   </nav>
   <div class="container">
     <!-- 왼쪽: 인물 소개 -->
@@ -118,6 +119,75 @@
           <p class="card-text text-center">
             <small class="text-body-secondary">{{data.tag}}</small>
           </p>
+=======
+    <div class="container">
+        <!-- 왼쪽: 인물 소개 -->
+        <div class="profile">
+            <div class="card mb-3" style="text-align: center;">
+                <img src="{{ url_for('static', filename='신연우 사진.png')}}" class="card-img-top" alt="..." style="width: 300px; height: auto; display: block; margin: 0 auto;">
+                <!-- "{{ url_for('static', filename='본인 사진.png')}}" static에 사진 추가하고 이렇게 올려주세요! style에서 크기 조정해주세요~  -->
+                <div class="card-body">
+                    <h5 class="card-title text-center">Shin Yeon Woo</h5>
+                    <p class="card-text text-center">"I Love Cats"</p>
+                    <p class="card-text text-center"><small class="text-body-secondary"><a href="https://sjaymi.tistory.com/">My Blog</a></small></p>
+                </div>
+            </div>
+        </div>
+        <!-- 오른쪽: 도와조 리스트 -->
+        <div class="board">
+            <div class="button-container">
+                <!-- HELP버튼 -->
+                <button type="button" class="btn btn-dark">HELP ME</button>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Help me</h5>
+                    <small class="text-body-secondary">3 days ago</small>
+                    </div>
+                    <p class="mb-1">I need help.</p>
+                    <div class="d-flex w-100 justify-content-between">
+                    <small class="text-body-secondary">answer</small>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Helping
+                    </button>
+                    </div>
+                </a>
+                <!-- 나머지 리스트 아이템들 -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">You can help me</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Help content</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Cheering</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Done</label>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div>
+>>>>>>> Stashed changes
         </div>
       </div>
     </div>
