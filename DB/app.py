@@ -11,12 +11,10 @@ db = SQLAlchemy(app)
 
 
 class Help(db.Model):
-    password = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String, nullable=False)
-    title = db.Column(db.String, nullable=False)
-    context = db.Column(db.String, nullable=False)
-    date = db.Column(db.String, nullable=False)
-    answer = db.Column(db.String, nullable=False)
+    title = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String, nullable=False)
+    username = db.Column(db.String, nullable=False, default="leader")
+    answer = db.Column(db.String, nullable=False, default="")
 
     def __repr__(self):
         return f'{self.title} Help {self.username}'
