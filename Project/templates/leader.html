@@ -63,6 +63,8 @@
         text-align: center;
         /* 텍스트 가운데 정렬 */
       }
+      img {
+      }
     </style>
   </head>
   <body data-bs-theme="dark">
@@ -117,7 +119,11 @@
       <div class="profile">
         <div class="card mb-3">
           <!-- "{{ url_for('static', filename='본인 사진.png')}}" static에 사진 추가하고 이렇게 올려주세요!  -->
-          <img src="..." class="card-img-top" alt="..." />
+          <img
+            src="{{ url_for('static', filename='한진용.png')}}"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title text-center">{{data.name}}</h5>
             <p class="card-text text-center">{{data.profile}}</p>
