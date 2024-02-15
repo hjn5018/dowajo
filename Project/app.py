@@ -15,7 +15,7 @@ class Help(db.Model):
     listnum = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String, nullable=False)
     content = db.Column(db.String, nullable=False)
-    username = db.Column(db.String, nullable=False) #<-이거 디폴트 값이 'reader'가 아니라 입력한 페이지에 맞게 들어가게 해야함
+    username = db.Column(db.String, nullable=False)
     answer = db.Column(db.String, nullable=False, default="")
 
     def __repr__(self):
@@ -92,32 +92,6 @@ def member3():
         "tag": tag
     }
     return render_template("member3.html", data=context, dowajo=help_list)
-
-# @app.route('/help/create', methods=['GET', 'POST'])
-# def helplist_create():
-#     if request.method == 'GET':
-#         helptitle_receive = request.args.get("helptitle")
-#         helpcontent_receive = request.args.get("helpcontent")
-        
-#         # 현재 URL을 분석하여 username을 가져옵니다.
-#         username_receive = request.url.split('/')[-1]
-
-#         # 데이터를 DB에 저장하기
-#         help = Help(title=helptitle_receive, content=helpcontent_receive, username=username_receive)
-#         db.session.add(help)
-#         db.session.commit()
-
-#         # 각 페이지로 리다이렉트합니다.
-#         if username_receive == 'leader':
-#             return redirect(url_for('leader'))
-#         elif username_receive == 'member1':
-#             return redirect(url_for('member1'))
-#         elif username_receive == 'member2':
-#             return redirect(url_for('member2'))
-#         elif username_receive == 'member3':
-#             return redirect(url_for('member3'))
-
-#     return redirect(url_for('home'))
 
 # leader HELP ME 버튼 db 적용 
 @app.route('/help/create/leader')
