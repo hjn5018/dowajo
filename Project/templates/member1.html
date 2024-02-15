@@ -115,7 +115,8 @@
     <div class="profile">
       <div class="card mb-3 custom-card">
         <!-- "{{ url_for('static', filename='본인 사진.png')}}" static에 사진 추가하고 이렇게 올려주세요!  -->
-        <img src="{{ url_for('static', filename='신연우.png')}}" class="card-img-top" alt="..." />
+        <img src="{{ url_for('static', filename='신연우.png')}}" class="card-img-top" alt="..."
+          style="width: 70px; height: auto; margin: auto;" />
         <div class="card-body">
           <h5 class="card-title text-center">{{data.name}}</h5>
           <p class="card-text text-center">{{data.profile}}</p>
