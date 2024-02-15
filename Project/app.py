@@ -44,7 +44,7 @@ def home():
 def leader():
 
     name = "Han"
-    profile = "Who i am"
+    profile = "actually, I want to be an AI developer."
     tag = "Leader"
     help_list = Help.query.filter_by(username="leader").all()
     answer_list = Answer.query.filter_by(username="leader").all()
@@ -61,7 +61,7 @@ def leader():
 def member1():
 
     name = "Shin"
-    profile = "Who i am"
+    profile = "actually, I need to go"
     tag = "Member"
     help_list = Help.query.filter_by(username="member1").all()
     answer_list = Answer.query.filter_by(username="member1").all()
@@ -78,7 +78,7 @@ def member1():
 def member2():
 
     name = "Kim"
-    profile = "Who i am"
+    profile = "actually, I live in Gangneung"
     tag = "Member"
     help_list = Help.query.filter_by(username="member2").all()
     answer_list = Answer.query.filter_by(username="member2").all()
@@ -95,7 +95,7 @@ def member2():
 def member3():
 
     name = "Kang"
-    profile = "Who i am"
+    profile = "actually, I'm disappointed that Yeonwoo left without saying hello to us"
     tag = "Member"
     help_list = Help.query.filter_by(username="member3").all()
     answer_list = Answer.query.filter_by(username="member3").all()
