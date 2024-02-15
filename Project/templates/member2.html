@@ -115,7 +115,7 @@
     <div class="container">
       <!-- 왼쪽: 인물 소개 -->
       <div class="profile">
-        <div class="card mb-3">
+        <div class="card mb-3" style="height: 300%;">
           <!-- "{{ url_for('static', filename='본인 사진.png')}}" static에 사진 추가하고 이렇게 올려주세요!  -->
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
@@ -162,10 +162,13 @@
             </div>
           </a>
           {% endfor %}
+
           <!-- 나머지 리스트 아이템들 -->
         </div>
       </div>
     </div>
+    
+
     <!-- HELP 버튼 모달 창 -->
     <div
       class="modal fade"
