@@ -139,8 +139,8 @@ def helplist_create():
     # form으로 데이터 입력 받기
     helptitle_receive = request.args.get("helptitle")
     helpcontent_receive = request.args.get("helpcontent")
-    username_receivee = request.url.split('/')[-1] # 현재 URL을 분석하여 username을 가져옴 여기선 leader -> 라고 기대했지만 "leader?helptitle=test&helpcontent=test" 이런 값을 가져와서
-    username_receive = username_receivee.split('?')[0]  # 여기서 ? 기준으로 한번 더 나눴음 이제 username leader로 잘나옴
+    username_receivee = request.url.split('/')[-1] # 현재 URL을 분석하여 username을 가져옴 여기선 "leader" -> 라고 기대했지만 "leader?helptitle=test&helpcontent=test" 이런 값을 가져와서
+    username_receive = username_receivee.split('?')[0]  # 여기서 ? 기준으로 한번 더 나눴음 이제 username "leader"로 잘나옴
 
     # 데이터를 DB에 저장하기
     help = Help(title=helptitle_receive, content=helpcontent_receive, username=username_receive)
